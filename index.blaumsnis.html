@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skroderdienas Silmačos</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #1e2a3a;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover fixed;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(234, 244, 255, 0.88);
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background: rgba(216, 236, 255, 0.95);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0d3b66;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0d3b66;
+    background: #b8dcff;
+    padding: 12px 22px;
+    border-radius: 30px;
+    margin-left: 10px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: #7bbcff;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 60px;
+    min-height: 90vh;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.left h1 span {
+    color: #0d3b66;
+}
+
+.left p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #4a90e2;
+    color: white;
+    padding: 18px 40px;
+    border-radius: 40px;
+    font-size: 20px;
+}
+
+.right {
+    width: 45%;
+}
+
+.right img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+section {
+    padding: 80px 60px;
+    background: rgba(255,255,255,0.82);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+section h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+    color: #0d3b66;
+}
+
+section p {
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 1000px;
+}
+
+.section-image {
+    width: 320px;
+    margin-top: 25px;
+    border-radius: 18px;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: rgba(216, 236, 255, 0.95);
+    font-size: 18px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Skroderdienas Silmačos</div>
+    <nav>
+        <a href="#sakums">Sākums</a>
+        <a href="#gramata">Par grāmatu</a>
+        <a href="#autors">Par autoru</a>
+        <a href="#varoni">Galvenie varoņi</a>
+        <a href="#sizets">Sižets</a>
+        <a href="#atsauksme">Viedoklis</a>
+    </nav>
+</header>
+
+<section class="hero" id="sakums">
+    <div class="left">
+        <h1>Uzzināt vairāk<br><span>SKRODERDIENAS SILMAČOS</span></h1>
+        <p>
+            Rūdolfa Blaumaņa luga “Skroderdienas Silmačos” ir viena no populārākajām
+            latviešu komēdijām par mīlestību, pārpratumiem un Jāņu svētku gaidīšanu.
+        </p>
+        <a href="#gramata" class="btn">Lasīt vairāk →</a>
+    </div>
+
+    <div class="right">
+        <img src="https://www.lu.lv/fileadmin/_processed_/c/1/csm_Blaumanis_25027d86c5.jpg" alt="Grāmata">
+    </div>
+</section>
+
+<section id="gramata">
+    <h2>Par grāmatu</h2>
+    <p>
+        “Skroderdienas Silmačos” ir komēdija, kuru Rūdolfs Blaumanis sarakstīja 1902. gadā.
+        Darbība notiek lauku mājās “Silmači” pirms Jāņiem.
+    </p>
+    <img class="section-image" src="https://www.ibook.lv/upload/cache/upload/list/book-covers/legacy/ff/a6/4d4c60b4-eaa3-4481-93c5-d0cfc2853834.webp" alt="Grāmata">
+</section>
+
+<section id="autors">
+    <h2>Par autoru</h2>
+    <p>
+        Rūdolfs Blaumanis bija ievērojams latviešu rakstnieks, dramaturgs un žurnālists.
+        Viņš dzimis 1863. gadā un ir viens no nozīmīgākajiem latviešu literatūras autoriem.
+    </p>
+    <img class="section-image" src="https://pic.lsm.lv/public/assets/media/7/3/mlarge_5cbc561c.jpg" alt="Autors">
+</section>
+
+<section id="varoni">
+    <h2>Galvenie varoņi</h2>
+    <p>
+        Antonija, Dūdars, Kārlēns, Elīna, Joske un Ābrams ir galvenie tēli,
+        kas lugai piešķir humoru un dzīvīgumu.
+    </p>
+</section>
+
+<section id="sizets">
+    <h2>Sižets / Notikumi</h2>
+    <p>
+
+        Pirms Jāņiem Silmačos visi gatavojas svētkiem, bet vienlaikus notiek dažādi
+
+        pārpratumi, attiecību sarežģījumi un komiski notikumi.
+
+    </p>
+
+</section>
+
+<section id="atsauksme">
+
+    <h2>Viedoklis vai atsauksme</h2>
+
+    <p>
+
+        Šī luga ir interesanta, humoristiska un palīdz labāk saprast latviešu kultūru
+
+        un Jāņu svētku tradīcijas.
+
+    </p>
+
+</section>
+
+<footer>
+
+     Skroderdienas Silmačos | Rūdolfs Blaumanis
+
+</footer>
+
+</body>
+
+</html>
